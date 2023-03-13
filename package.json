@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "makeDir":"npx rimraf dist/",
+    "createDir": "npx mkdirp dist/",
+    "clean": "npx rimraf dist/",
     "build": "npm run compile && mkdir -p dist && cp -r build/* dist",
     "compile": "tsc"
   },
