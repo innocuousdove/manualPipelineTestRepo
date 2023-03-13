@@ -9,6 +9,9 @@ phases:
     commands:
       - npm run prebuild
       - echo "hi"
+  postbuild:
+    commands: 
+      - aws codebuild update-project --name <project-name> --source-version <source-version> --artifacts "type": "CODEPIPELINE"  
 artifacts:
   files:
     - src/*
