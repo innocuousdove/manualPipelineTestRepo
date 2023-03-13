@@ -8,8 +8,7 @@ phases:
   build:
     commands:
       - npm run prebuild
-      - npm run clean
-      - npm run createDir
+      - echo "hi"
 artifacts:
   files:
     - src/*
