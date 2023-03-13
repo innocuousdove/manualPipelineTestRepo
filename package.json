@@ -1,0 +1,22 @@
+{
+  "name": "manualpipelinetestrepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/innocuousdove/manualPipelineTestRepo.git"
+  },
+  "author": "liam olivier <liam.olivier@symbiotics.co.za>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/innocuousdove/manualPipelineTestRepo/issues"
+  },
+  "homepage": "https://github.com/innocuousdove/manualPipelineTestRepo#readme",
+  "dependencies": {
+    "typescript": "^4.9.5"
+  }
+}
