@@ -11,8 +11,9 @@ phases:
       - echo "hi"
   postbuild:
     commands: 
-      - aws codebuild update-project --name <project-name> --source-version <source-version> --artifacts "type": "CODEPIPELINE"  
+      - echo Build completed on `date`
 artifacts:
+  discard-paths: yes
   files:
     - src/*
   base-directory: dist/
