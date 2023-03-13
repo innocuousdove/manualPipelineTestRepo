@@ -16,4 +16,4 @@ artifacts:
   discard-paths: yes
   files:
     - src/*
-  base-directory: dist/
+
