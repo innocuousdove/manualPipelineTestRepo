@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo Build"
+    "build": "npm run compile && mkdir -p dist && cp -r build/* dist",
+    "compile": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^4.9.5"
   },
   "repository": {
     "type": "git",
@@ -16,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/innocuousdove/manualPipelineTestRepo/issues"
   },
-  "homepage": "https://github.com/innocuousdove/manualPipelineTestRepo#readme",
-  "dependencies": {
-    "typescript": "^4.9.5"
-  }
+  "homepage": "https://github.com/innocuousdove/manualPipelineTestRepo#readme"
 }
