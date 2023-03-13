@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prebuild": "node --version && aws --version && npx cdk --version",
     "createDir": "npx mkdirp dist/",
     "clean": "npx rimraf dist/",
     "build": "npm run compile && mkdir -p dist && cp -r build/* dist",

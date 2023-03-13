@@ -7,8 +7,10 @@ phases:
       - npm install
   build:
     commands:
+      - npm run prebuild
       - npm run clean
       - npm run createDir
 artifacts:
   files:
-    - 'dist/*'
+    - src/*
+  base-directory: dist
