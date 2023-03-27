@@ -4,17 +4,19 @@ phases:
     runtime-versions:
       nodejs: 16
     commands:
+      - echo -----PREBUILD-----
       - npm install
-  prebuild:
+  pre_build:
     commands:
+      - echo -----PREBUILD-----
       - npm run prebuild
-      - echo "hi"
   build:
     commands:
+      - echo -----BUILD-----
       - npm run build
-      - echo "hi"
   post_build:
     commands: 
+      - echo -----POSTBUILD-----
       - echo Build completed on `date`
 artifacts:
   discard-paths: yes
