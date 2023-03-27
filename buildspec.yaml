@@ -5,9 +5,13 @@ phases:
       nodejs: 16
     commands:
       - npm install
-  build:
+  prebuild:
     commands:
       - npm run prebuild
+      - echo "hi"
+  build:
+    commands:
+      - npm run build
       - echo "hi"
   post_build:
     commands: 
