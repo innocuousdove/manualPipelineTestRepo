@@ -1,5 +1,5 @@
 {
-    "app": "npx ts-node --prefer-ts-exts parameters.ts",
+    "app": "npx ts-node --prefer-ts-exts bucket.ts",
     "watch": {
       "include": [
         "**"
