@@ -14,3 +14,5 @@ dependancies - keep fixed as possible, deve dep more flexible (more operating sy
 ~ - major version
 
 majorV.minorV
+
+changes to texts
