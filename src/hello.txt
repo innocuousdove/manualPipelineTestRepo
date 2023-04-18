@@ -1,1 +1,16 @@
 Hi
+node scrips pre/post-x will run before and after x
+cdk command automatically does compile so dont need to tsc
+mkdrip is for create directory
+rimraf cleans directory
+
+either going to do pre-post's in npm scripts and leave out those phases from buildspec, most likely going to do this
+
+dev dependencies 
+dependancies in process of creating artifact
+
+dependancies - keep fixed as possible, deve dep more flexible (more operating sys like mkdir) but functional stuff like cdk keep kixed ish
+^ - any minor version version or above
+~ - major version
+
+majorV.minorV

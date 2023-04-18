@@ -4,15 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "node --version && aws --version && npx cdk --version",
+    "prebuild": "echo PREBUILD SCRPIT && node --version && aws --version && npx cdk --version",
+    "build": "mkdir -p dist && cp -r build/* dist",
+    "postbuild": "echo POSTBUILD SCRIPT",
     "copyFiles": "npm install cpy-cli && npx cpy './dist/",
     "createDir": "npx mkdirp dist/",
-    "clean": "npx rimraf dist/",
-    "build": "npm run compile && mkdir -p dist && cp -r build/* dist",
-    "compile": "tsc"
-  },
-  "dependencies": {
-    "typescript": "^4.9.5"
+    "clean": "npx rimraf dist/"
   },
   "repository": {
     "type": "git",
@@ -23,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/innocuousdove/manualPipelineTestRepo/issues"
   },
-  "homepage": "https://github.com/innocuousdove/manualPipelineTestRepo#readme"
+  "homepage": "https://github.com/innocuousdove/manualPipelineTestRepo#readme",
+  "devDependencies": {
+    "aws-cdk-lib": "^2.70.0",
+    "mkdirp": "^3.0.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4"
+  }
 }
