@@ -6,7 +6,7 @@ phases:
     commands:
       - echo -----PHASE INSTALL-----
       - export SECRET_VALUE=$(aws secretsmanager get-secret-value --secret-id user/liam/nexusAuthToken --query SecretString --output text)
-      - echo $SECRET_VALUE
+      - echo "$SECRET_VALUE" > .npmrc
       - npm install
   pre_build:
     commands:
